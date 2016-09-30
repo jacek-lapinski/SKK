@@ -18,7 +18,6 @@
   "author": "Jacek Łapiński",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-wiredep": "^3.0.1"
+    "grunt": "^1.0.1"
   }
 }

@@ -8,12 +8,13 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Sopocki Klub Kendo</title>
 
-  <!-- bower:css -->
-  <link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.min.css" />
-  <!-- endbower -->
+  <link rel="stylesheet" href="../externals/bootstrap-3.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="../externals/bootstrap-3.3.7/css/bootstrap-theme.css" />
+  <link rel="stylesheet" href="../externals/owl.carousel.2.0.0/css/owl.carousel.css" />
+  <link rel="stylesheet" href="../externals/animate/css/animate.css" />
+  <link rel="stylesheet" href="../externals/famax-ultra-free/css/famax.css" />
 
-  <link rel="stylesheet" href="/bower_components/owl.carousel/owl.carousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="/bower_components/owl.carousel/owl.carousel/owl.theme.css" />
+  <link rel="stylesheet" href="./skk-main.css" />
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,38 +56,44 @@
   </header>
   <!--/header-->
 
-  <div class="owl-carousel owl-theme">
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-  </div>
+  <section id="slider">
+    <div class="container-fluid">
+      <div class="owl-carousel">
+        <div>
+          <img src="./images/slider1.jpg" />
+        </div>
+        <div>
+          <img src="./images/slider2.jpg" />
+        </div>
+        <div>
+          <img src="./images/slider3.jpg" />
+        </div>
+        <div>
+          <img src="./images/slider4.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="news">
+    <div class="container">
+      <div class="row">
+        <div id="famax" class="famax">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:4,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true
-});
-    </script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js" integrity="sha256-e9gNBsAcA0DBuRWbm0oZfbiCyhjLrI6bmqAl5o+ZjUA=" crossorigin="anonymous"></script>
+  <script src="../externals/bootstrap-3.3.7/js/bootstrap.js"></script>
+  <script src="../externals/owl.carousel.2.0.0/js/owl.carousel.js"></script>
+  <script src="../externals/famax-ultra-free/js/jquery.imagesloaded.js"></script>
+  <script src="../externals/famax-ultra-free/js/jquery.wookmark.js"></script>
+  <script src="../externals/famax-ultra-free/js/jquery.famax.js"></script>
+  <script src="../externals/famax-ultra-free/js/magnific_popup_image_iframe_gallery_inline.js"></script>
 
+  <script src="./skk-main.js"></script>
 
-
-
-  <!-- bower:js -->
-  <script src="../bower_components/jquery/jquery.js"></script>
-  <script src="../bower_components/bootstrap-css/js/bootstrap.min.js"></script>
-  <!-- endbower -->
-
-  <script src="/bower_components/owl.carousel/owl.carousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
