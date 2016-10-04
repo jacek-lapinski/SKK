@@ -68,13 +68,12 @@ a:hover {
     .section-header .section-title:after {
       content: "";
       position: absolute;
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       bottom: -11px;
       left: 50%;
-      margin-left: -12px;
+      margin-left: -14px;
       border: 5px solid #fff;
-      border-radius: 20px;
       background: #0A93BD; }
 
 #slider {
@@ -84,6 +83,8 @@ a:hover {
   margin-bottom: 20px; }
 
 #treningi {
+  padding-bottom: 50px;
+  font-size: 18px;
   background: #0A93BD;
   color: #fff; }
   #treningi h2 {
@@ -93,6 +94,9 @@ a:hover {
   #treningi .box {
     width: 50%;
     margin: 0 auto; }
+    #treningi .box .box-title {
+      font-size: 30px;
+      font-weight: bold; }
 
 .strong {
   font-size: 20px;
