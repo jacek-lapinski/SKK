@@ -1,0 +1,197 @@
+$blue-logo-color: #0A93BD;
+$black-logo-color: #1A1A18;
+
+a {
+  color: $blue-logo-color;
+}
+
+p {
+  margin: 10px;
+}
+
+a:hover {
+  color: $blue-logo-color;
+}
+
+#header-spot {
+  background: rgba(26, 26, 24, 1);
+  height: 80px;
+}
+
+#main-menu {
+  background: rgba(26, 26, 24, 0.9);
+  height: 80px;
+  border-width: 0px;
+}
+
+.navbar-default .navbar-nav > li {
+  > a {
+    color: #fff;
+    border: 5px solid transparent;
+    &:visited, &:focus {
+      color: #fff;
+    }
+  }
+  &:hover {
+    color: $blue-logo-color;
+  }
+}
+
+#main-menu.navbar-default .navbar-nav > li {
+  &.active > a, &.open > a {
+    background: transparent;
+    border-top: 5px solid $blue-logo-color;
+    color: #fff;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  &:hover, &:focus {
+    color: $blue-logo-color;
+  }
+}
+
+#main-menu.navbar-default .navbar-nav > li {
+  &.active:hover > a, &.open:hover > a {
+    color: $blue-logo-color;
+  }
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  &:hover {
+    color: $blue-logo-color;
+  }
+}
+
+.navbar-nav > li > a {
+  line-height: 40px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  margin-top: 85px;
+  .section-title {
+    font-size: 36px;
+    color: $black-logo-color;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -80px;
+      border: none;
+      border-top: 3px solid $blue-logo-color;
+      color: #fff;
+      background-color: #fff;
+      height: 3px;
+      width: 160px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      bottom: -11px;
+      left: 50%;
+      margin-left: -12px;
+      border: 5px solid #fff;
+      border-radius: 20px;
+      background: $blue-logo-color;
+    }
+  }
+}
+
+#slider {
+  background: $black-logo-color;
+}
+
+#jakzaczac {
+  margin-bottom: 20px;
+}
+
+#treningi {
+    background: $blue-logo-color;
+    color: #fff;
+    h2 {
+      color: #fff;
+  }
+  .section-title {  
+    &:before {
+      border-top: 3px solid #fff;
+    }
+  }
+  .box{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.strong {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#kontakt {
+  background: $black-logo-color;
+  color: #fff;
+  padding-bottom: 50px;
+  h2 {
+    color: #fff;
+  }
+  
+}
+
+#kontakt-logo-info {
+  background: $black-logo-color;
+  color: #fff;
+}
+
+#kontakt-logo {
+  text-align: center;
+}
+
+#kontakt-info {
+  padding: 20px;
+  font-size: 16px;
+  address {
+    margin: 80px;
+  }
+  strong {
+    font-size: 20px;
+  }
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: $black-logo-color;
+  a {
+    color: #fff;
+    &:hover {
+      color: $blue-logo-color;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 -7.5px;
+    > li {
+      display: inline-block;
+      margin: 0 7.5px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #footer .social-icons {
+    float: right;
+  }
+}

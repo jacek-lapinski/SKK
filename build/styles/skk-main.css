@@ -1,0 +1,146 @@
+a {
+  color: #0A93BD; }
+
+p {
+  margin: 10px; }
+
+a:hover {
+  color: #0A93BD; }
+
+#header-spot {
+  background: #1a1a18;
+  height: 80px; }
+
+#main-menu {
+  background: rgba(26, 26, 24, 0.9);
+  height: 80px;
+  border-width: 0px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  border: 5px solid transparent; }
+  .navbar-default .navbar-nav > li > a:visited, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff; }
+.navbar-default .navbar-nav > li:hover {
+  color: #0A93BD; }
+
+#main-menu.navbar-default .navbar-nav > li.active > a, #main-menu.navbar-default .navbar-nav > li.open > a {
+  background: transparent;
+  border-top: 5px solid #0A93BD;
+  color: #fff; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #0A93BD; }
+
+#main-menu.navbar-default .navbar-nav > li.active:hover > a, #main-menu.navbar-default .navbar-nav > li.open:hover > a {
+  color: #0A93BD; }
+
+.navbar-default .navbar-brand {
+  color: #fff; }
+  .navbar-default .navbar-brand:hover {
+    color: #0A93BD; }
+
+.navbar-nav > li > a {
+  line-height: 40px; }
+
+.section-header {
+  margin-bottom: 50px;
+  margin-top: 85px; }
+  .section-header .section-title {
+    font-size: 36px;
+    color: #1A1A18;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px; }
+    .section-header .section-title:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -80px;
+      border: none;
+      border-top: 3px solid #0A93BD;
+      color: #fff;
+      background-color: #fff;
+      height: 3px;
+      width: 160px; }
+    .section-header .section-title:after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      bottom: -11px;
+      left: 50%;
+      margin-left: -12px;
+      border: 5px solid #fff;
+      border-radius: 20px;
+      background: #0A93BD; }
+
+#slider {
+  background: #1A1A18; }
+
+#jakzaczac {
+  margin-bottom: 20px; }
+
+#treningi {
+  background: #0A93BD;
+  color: #fff; }
+  #treningi h2 {
+    color: #fff; }
+  #treningi .section-title:before {
+    border-top: 3px solid #fff; }
+  #treningi .box {
+    width: 50%;
+    margin: 0 auto; }
+
+.strong {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px; }
+
+#kontakt {
+  background: #1A1A18;
+  color: #fff;
+  padding-bottom: 50px; }
+  #kontakt h2 {
+    color: #fff; }
+
+#kontakt-logo-info {
+  background: #1A1A18;
+  color: #fff; }
+
+#kontakt-logo {
+  text-align: center; }
+
+#kontakt-info {
+  padding: 20px;
+  font-size: 16px; }
+  #kontakt-info address {
+    margin: 80px; }
+  #kontakt-info strong {
+    font-size: 20px; }
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: #1A1A18; }
+  #footer a {
+    color: #fff; }
+    #footer a:hover {
+      color: #0A93BD; }
+  #footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 -7.5px; }
+    #footer ul > li {
+      display: inline-block;
+      margin: 0 7.5px;
+      font-size: 20px; }
+
+@media only screen and (min-width: 768px) {
+  #footer .social-icons {
+    float: right; } }
+
+/*# sourceMappingURL=skk-main.css.map */
