@@ -58,23 +58,19 @@ a:hover {
       position: absolute;
       bottom: 0;
       left: 50%;
-      margin-left: -80px;
+      margin-left: -100px;
       border: none;
-      border-top: 3px solid #0A93BD;
+      border-top: 1px solid #0A93BD;
       color: #fff;
       background-color: #fff;
-      height: 3px;
-      width: 160px; }
+      height: 1px;
+      width: 200px; }
     .section-header .section-title:after {
-      content: "";
+      content: url("../../app/images/men-blue.png");
       position: absolute;
-      width: 28px;
-      height: 28px;
-      bottom: -11px;
+      bottom: -20px;
       left: 50%;
-      margin-left: -14px;
-      border: 5px solid #fff;
-      background: #0A93BD; }
+      margin-left: -25px; }
 
 #slider {
   background: #1A1A18; }
