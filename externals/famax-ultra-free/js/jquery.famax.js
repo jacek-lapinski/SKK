@@ -308,7 +308,7 @@ var famaxLoggedInUser = {};
 			async: true,
 			cache: true,
 			dataType: 'jsonp',
-			success: function(response) { insertPhotoFeeds(response,loadMoreFlag,$famaxContainer);},
+			success: function(response) { /*insertPhotoFeeds(response,loadMoreFlag,$famaxContainer);*/alert("jacek2")},
 			error: function(errorResponse) {  alert(errorResponse); },
 			beforeSend: setHeader
 		});
@@ -419,9 +419,9 @@ var famaxLoggedInUser = {};
 		//4.0 added - show photos of albums from Albums Tab
 		if(famax_global_options.onClickAction=="popup") {
 			$famaxContainer.find('#famax-video-list-div').on('click','li[id^="photos_"]',function(){
-				$famaxContainer.data('famax_current_playlist_id',this.id);
-				var albumName = $(this).find('.famax-video-list-title').text();
-				$famaxContainer.data('famax_current_playlist_name',albumName);
+				//$famaxContainer.data('famax_current_playlist_id',this.id);
+				//var albumName = $(this).find('.famax-video-list-title').text();
+				//$famaxContainer.data('famax_current_playlist_name',albumName);
 				displayTabFeeds(this.id,$famaxContainer);
 			});
 		}
@@ -438,7 +438,7 @@ var famaxLoggedInUser = {};
 			displayLikes(itemId,$famaxContainer);
 		});
 		
-		var tabId = 'posts';
+		var tabId = 'albums';
 		displayTabFeeds(tabId,$famaxContainer);
 
 		//added in 5.0
@@ -2335,7 +2335,7 @@ var famaxLoggedInUser = {};
 		//console.log('displayTabFeeds tabId-'+tabId);
 		var tab_split = tabId.split('_');
 
-		showLoader($famaxContainer);
+		//showLoader($famaxContainer);
 		action = tab_split[0];
 		if(action.indexOf("posts")!=-1) {
 			getPagePosts($famaxContainer,null);
@@ -2354,9 +2354,9 @@ var famaxLoggedInUser = {};
 			getPagePhotos($famaxContainer,null);
 		}
 		
-		$famaxContainer.find('.famax-tab').removeClass('famax-tab-hover');	
-		$('#'+tabId).addClass('famax-tab-hover');
-		$famaxContainer.find('#famax-select').val(tabId);
+		//$famaxContainer.find('.famax-tab').removeClass('famax-tab-hover');	
+		//$('#'+tabId).addClass('famax-tab-hover');
+		//$famaxContainer.find('#famax-select').val(tabId);
 
 	};
 
