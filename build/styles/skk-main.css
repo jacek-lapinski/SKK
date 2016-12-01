@@ -1,44 +1,56 @@
+@font-face {
+  font-family: 'kendo';
+  src: url("../fonts/kendo.eot");
+  src: url("../fonts/kendo.eot?#iefix") format("embedded-opentype"), url("../fonts/kendo.woff") format("woff"), url("../fonts/kendo.ttf") format("truetype"), url("../fonts/kendo.svg#kendo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 a {
-  color: #0A93BD; }
+  color: #3b5998; }
 
 p {
   margin: 10px; }
 
 a:hover {
-  color: #0A93BD; }
+  color: #3b5998; }
 
 #header-spot {
   background: #1a1a18;
   height: 80px; }
 
 #main-menu {
-  background: rgba(26, 26, 24, 0.9);
-  height: 80px;
-  border-width: 0px; }
+  border-width: 0px;
+  min-height: 80px; }
+
+.navbar {
+  background: rgba(26, 26, 24, 0.9); }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
   border: 5px solid transparent; }
-  .navbar-default .navbar-nav > li > a:visited, .navbar-default .navbar-nav > li > a:focus {
+
+.menu-item {
+  color: #fff; }
+  .menu-item:hover {
+    color: #3b5998; }
+  .menu-item:focus {
     color: #fff; }
-.navbar-default .navbar-nav > li:hover {
-  color: #0A93BD; }
+  .menu-item:visited {
+    color: #fff; }
 
 #main-menu.navbar-default .navbar-nav > li.active > a, #main-menu.navbar-default .navbar-nav > li.open > a {
   background: transparent;
-  border-top: 5px solid #0A93BD;
+  border-top: 5px solid #3b5998;
   color: #fff; }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #0A93BD; }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #3b5998; }
 
 #main-menu.navbar-default .navbar-nav > li.active:hover > a, #main-menu.navbar-default .navbar-nav > li.open:hover > a {
-  color: #0A93BD; }
+  color: #3b5998; }
 
 .navbar-default .navbar-brand {
   color: #fff; }
   .navbar-default .navbar-brand:hover {
-    color: #0A93BD; }
+    color: #3b5998; }
 
 .navbar-nav > li > a {
   line-height: 40px; }
@@ -60,13 +72,15 @@ a:hover {
       left: 50%;
       margin-left: -100px;
       border: none;
-      border-top: 1px solid #0A93BD;
+      border-top: 1px solid #3b5998;
       color: #fff;
       background-color: #fff;
       height: 1px;
       width: 200px; }
     .section-header .section-title:after {
-      content: url("../../app/images/men-blue.png");
+      content: "\0041";
+      font-family: "kendo";
+      color: #3b5998;
       position: absolute;
       bottom: -20px;
       left: 50%;
@@ -75,24 +89,48 @@ a:hover {
 #slider {
   background: #1A1A18; }
 
+#motto {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin: 5px; }
+
 #jakzaczac {
+  margin-bottom: 20px; }
+
+#pokazy {
   margin-bottom: 20px; }
 
 #treningi {
   padding-bottom: 50px;
   font-size: 18px;
-  background: #0A93BD;
+  background: #3b5998;
   color: #fff; }
   #treningi h2 {
     color: #fff; }
   #treningi .section-title:before {
-    border-top: 3px solid #fff; }
+    border-top: 1px solid #1A1A18; }
+  #treningi .section-title:after {
+    color: #1A1A18; }
   #treningi .box {
     width: 50%;
     margin: 0 auto; }
     #treningi .box .box-title {
       font-size: 30px;
       font-weight: bold; }
+
+#instruktorzy {
+  padding-bottom: 50px;
+  background: #3b5998;
+  color: #fff; }
+  #instruktorzy h2 {
+    color: #fff; }
+  #instruktorzy img {
+    border-radius: 25px; }
+  #instruktorzy .section-title:before {
+    border-top: 1px solid #1A1A18; }
+  #instruktorzy .section-title:after {
+    color: #1A1A18; }
 
 .strong {
   font-size: 20px;
@@ -104,6 +142,10 @@ a:hover {
   color: #fff;
   padding-bottom: 50px; }
   #kontakt h2 {
+    color: #fff; }
+  #kontakt .section-title:before {
+    border-top: 1px solid #fff; }
+  #kontakt .section-title:after {
     color: #fff; }
 
 #kontakt-logo-info {
@@ -129,7 +171,7 @@ a:hover {
   #footer a {
     color: #fff; }
     #footer a:hover {
-      color: #0A93BD; }
+      color: #3b5998; }
   #footer ul {
     list-style: none;
     padding: 0;

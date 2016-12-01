@@ -1,5 +1,16 @@
-$blue-logo-color: #0A93BD;
+$blue-logo-color: #3b5998;
 $black-logo-color: #1A1A18;
+
+@font-face {
+    font-family: 'kendo';
+    src: url('../fonts/kendo.eot');
+    src: url('../fonts/kendo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kendo.woff') format('woff'),
+         url('../fonts/kendo.ttf') format('truetype'),
+         url('../fonts/kendo.svg#kendo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 a {
   color: $blue-logo-color;
@@ -19,21 +30,30 @@ a:hover {
 }
 
 #main-menu {
-  background: rgba(26, 26, 24, 0.9);
-  height: 80px;
   border-width: 0px;
+  min-height: 80px;
+}
+
+.navbar {
+    background: rgba(26, 26, 24, 0.9);
 }
 
 .navbar-default .navbar-nav > li {
   > a {
-    color: #fff;
     border: 5px solid transparent;
-    &:visited, &:focus {
-      color: #fff;
-    }
   }
+}
+
+.menu-item {
+  color: #fff;
   &:hover {
     color: $blue-logo-color;
+  }
+  &:focus {
+    color: #fff;
+  }
+  &:visited {
+    color: #fff;
   }
 }
 
@@ -46,7 +66,7 @@ a:hover {
 }
 
 .navbar-default .navbar-nav > li > a {
-  &:hover, &:focus {
+  &:hover {
     color: $blue-logo-color;
   }
 }
@@ -92,7 +112,9 @@ a:hover {
       width: 200px;
     }
     &:after {
-      content: url("../../app/images/men-blue.png");
+      content: "\0041";
+      font-family: "kendo";
+      color: $blue-logo-color;
       position: absolute;
       bottom: -20px;
       left: 50%;
@@ -105,7 +127,18 @@ a:hover {
   background: $black-logo-color;
 }
 
+#motto {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin: 5px;
+}
+
 #jakzaczac {
+  margin-bottom: 20px;
+}
+
+#pokazy {
   margin-bottom: 20px;
 }
 
@@ -119,7 +152,10 @@ a:hover {
   }
   .section-title {  
     &:before {
-      border-top: 3px solid #fff;
+      border-top: 1px solid $black-logo-color;
+    }
+    &:after {
+      color: $black-logo-color;
     }
   }
   .box{
@@ -128,6 +164,26 @@ a:hover {
     .box-title{
       font-size: 30px;
       font-weight: bold;
+    }
+  }
+}
+
+#instruktorzy {
+    padding-bottom: 50px;    
+    background: $blue-logo-color;
+    color: #fff;
+    h2 {
+      color: #fff;
+    }
+    img {
+      border-radius: 25px;
+    }
+  .section-title {  
+    &:before {
+      border-top: 1px solid $black-logo-color;
+    }
+    &:after {
+      color: $black-logo-color;
     }
   }
 }
@@ -145,7 +201,14 @@ a:hover {
   h2 {
     color: #fff;
   }
-  
+  .section-title {  
+    &:before {
+      border-top: 1px solid #fff;
+    }
+    &:after {
+      color: #fff;
+    }
+  }
 }
 
 #kontakt-logo-info {
