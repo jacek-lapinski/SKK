@@ -22,8 +22,8 @@
 	<link rel="stylesheet" href="./externals/bootstrap-3.3.7/css/bootstrap-theme.css" />
 	<link rel="stylesheet" href="./externals/owl.carousel.2.0.0/css/owl.carousel.css" />
 	<link rel="stylesheet" href="./externals/animate/css/animate.css" />
-	<link rel="stylesheet" href="./externals/fsg-v1.0.0/styles/fsg.min.css" />
-	<link rel="stylesheet" href="./externals/fsg-v1.0.0/styles/lightbox.min.css" />
+	<link rel="stylesheet" href="./externals/sfp-v1.1.0/styles/sfp.min.css" />
+	<link rel="stylesheet" href="./externals/sfp-v1.1.0/styles/lightbox.min.css" />
 
 	<link rel="stylesheet" href="./build/styles/skk-main.min.css" />
 
@@ -34,23 +34,21 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<!-- Piwik -->
-	<script type="text/javascript">
-		var _paq = _paq || [];
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function () {
-			var u = "//stats0.mydevil.net/";
-			_paq.push(['setTrackerUrl', u + 'piwik.php']);
-			_paq.push(['setSiteId', '247']);
-			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-			g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
-		})();
+	<!-- Google analytics -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-28245476-1', 'auto');
+		ga('send', 'pageview');
 	</script>
-	<noscript>
-		<p><img src="//stats0.mydevil.net/piwik.php?idsite=247" style="border:0;" alt="" /></p>
-	</noscript>
-	<!-- End Piwik Code -->
+	<!--/Google analytics -->
+
+
 </head>
 
 <body>
@@ -137,7 +135,7 @@
 				<h2 class="section-title text-center wow fadeInDown">Aktualności</h2>
 			</div>
 			<div class="row">
-				<div id="fsg-news">
+				<div id="sfp-news">
 				</div>
 			</div>
 		</div>
@@ -328,7 +326,7 @@
 				<h2 class="section-title text-center wow fadeInDown">Galeria</h2>
 			</div>
 			<div class="row">
-				<div id="fsg-galeria">
+				<div id="sfp-galeria">
 				</div>
 				<div style="text-align: right; float: right">
 					Reklama:
@@ -364,6 +362,7 @@
 					<p>
 						<b><i class="fa fa-phone"></i> Telefon</b>
 						<br><a href="tel:661034020">(+48) 661-034-020</a><span> - Jacek Łapiński</span>
+						<br><a href="tel:508237422">(+48) 508-237-422</a><span> - Artur Machowski</span>
 					</p>
 					<p>
 						<b><i class="fa fa-envelope"></i> Email</b>
@@ -408,9 +407,9 @@
 	<script src="./externals/jquery/1.9.1/jquery-1.9.1.js"></script>
 	<script src="./externals/bootstrap-3.3.7/js/bootstrap.js"></script>
 	<script src="./externals/owl.carousel.2.0.0/js/owl.carousel.js"></script>
-	<script src="./externals/fsg-v1.0.0/scripts/wookmark.min.js"></script>
-	<script src="./externals/fsg-v1.0.0/scripts/fsg.min.js"></script>
-	<script src="./externals/fsg-v1.0.0/scripts/lightbox.min.js"></script>
+	<script src="./externals/sfp-v1.1.0/scripts/wookmark.min.js"></script>
+	<script src="./externals/sfp-v1.1.0/scripts/sfp.min.js"></script>
+	<script src="./externals/sfp-v1.1.0/scripts/lightbox.min.js"></script>
 	<script src="./externals/wow/wow.min.js"></script>
 	<script src="./externals/textillate/jquery.lettering.js"></script>
 	<script src="./externals/textillate/jquery.textillate.js"></script>

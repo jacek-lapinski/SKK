@@ -1,6 +1,7 @@
 $blue-logo-color: #215cba;
 $blue-background-color: #102f60;
 $black-logo-color: #1A1A18;
+$light-blue-font-color: #fff;
 
 @font-face {
     font-family: 'kendo';
@@ -166,9 +167,9 @@ a:hover {
     padding-bottom: 50px;    
     font-size: 18px;
     background: $blue-background-color;
-    color: #fff;
+    color: $light-blue-font-color;
     h2 {
-      color: #fff;
+      color: $light-blue-font-color;
   }
   .section-title {  
     &:before {
@@ -191,9 +192,9 @@ a:hover {
 #instruktorzy {
     padding-bottom: 50px;    
     background: $blue-background-color;
-    color: #fff;
+    color: $light-blue-font-color;
     h2 {
-      color: #fff;
+      color: $light-blue-font-color;
     }
     img {
       border-radius: 25px;

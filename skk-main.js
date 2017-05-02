@@ -15,13 +15,14 @@ facebookGallery({
 	accessToken: '1270801512983487|21c21db8b582aa474f30bea9b73edc0b',
 	fbPage: 'kendosopot',
 	galleryOptions: {
-		elementId: 'fsg-galeria',
+		elementId: 'sfp-galeria',
 		imagesCountLimit: 99,
 		excludeAlbums: ['Timeline Photos', 'Mobile Uploads', 'Cover Photos', 'Profile Pictures', 'Untitled Album']
 	},
 	postsOptions: {
-		elementId: 'fsg-news',
-		postsCountLimit: 12
+		elementId: 'sfp-news',
+		postsCountLimit: 12,
+		defaultPostImageUrl: './images/pzk.png'
 	}
 });
 
