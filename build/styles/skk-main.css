@@ -193,9 +193,11 @@ a:hover {
       display: inline-block;
       margin: 0 7.5px;
       font-size: 20px; }
-
-@media only screen and (min-width: 768px) {
   #footer .social-icons {
-    float: right; } }
+    float: right; }
+
+@media (max-width: 600px) {
+  #kontakt-logo {
+    display: none !important; } }
 
 /*# sourceMappingURL=skk-main.css.map */

@@ -273,10 +273,20 @@ a:hover {
       font-size: 20px;
     }
   }
-}
-
-@media only screen and (min-width: 768px) {
-  #footer .social-icons {
+  .social-icons {
     float: right;
   }
+}
+
+// @media only screen and (min-width: 768px) {
+//   #footer .social-icons {
+//     float: right;
+//   }
+// }
+
+//small screen sizes
+@media (max-width: 600px) {
+    #kontakt-logo {
+        display: none !important;
+    }
 }
