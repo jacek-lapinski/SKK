@@ -85,6 +85,14 @@ a:hover {
   }
 }
 
+.navbar-nav {
+  width: 80%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
+  }
+}
 
 .navbar-default .navbar-nav > li > a {
   &:hover {
@@ -277,6 +285,7 @@ a:hover {
     float: right;
   }
 }
+
 
 // @media only screen and (min-width: 768px) {
 //   #footer .social-icons {
